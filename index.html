@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Night, My Love 🌙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to top, #1a1a40, #4b0082);
+      color: #ffe6f7;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Comic Neue', cursive;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+      margin-bottom: 20px;
+      color: #ffb3ec;
+    }
+
+    p {
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.8em;
+      color: #ffd6f6;
+      margin-top: 10px;
+      animation: floatText 3s infinite;
+    }
+
+    .moon {
+      font-size: 80px;
+      animation: floatMoon 2s infinite ease-in-out;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: twinkle 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes floatMoon {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars">
+    <div class="star" style="top: 20%; left: 30%;"></div>
+    <div class="star" style="top: 40%; left: 70%;"></div>
+    <div class="star" style="top: 60%; left: 50%;"></div>
+    <div class="star" style="top: 80%; left: 20%;"></div>
+    <div class="star" style="top: 10%; left: 80%;"></div>
+  </div>
+
+  <div class="moon">🌙</div>
+  <h1>Good night, my love 💖</h1>
+  <p>Sleep tight, dream of me 😴✨</p>
+  <p>I Love you loads, and I hope you enjoyed your day today 💖</p>
+</body>
+</html>
